@@ -12,28 +12,46 @@
 	<link rel="stylesheet" href="assets/css/animate.min.css">
 	<link rel="stylesheet" href="assets/css/fontawesome-all.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/authentication.css">
 
 	<body>
 		<div class="quiz-top-area text-center">
 			<h1>WAR FACTS QUIZ</h1>
 		</div>
-		<div class="login_form_container">
-            <form>
-                <input type="text" name="username" placeholder="Username"/>
-                <input type="password" name="password" placeholder="Password"/>
-                <input type="button" name="login-button" value="Login">
+		<div id="login_container" class="login_form_container">
+			<h2>Login</h2>
+            <form id="login_form" method="POST" action="">
+                <input type="text" id="login_username" name="username" placeholder="Username" required/>
+                <input type="password" id="login_password" name="password" placeholder="Password" required/>
+                <input type="submit" name="login-button" value="Login">
             </form>
-            <div><span>No account yet? Create one <a href="#">here!</a></span></div>
+			<div><span id="login_feedback"></span></div>
+            <div><span>No account yet? Create one <a href="#" id="account_creation_link"><strong>here!</strong></a></span></div>
+        </div>
+		<div style="display: none;" id="registration_form_container" class="login_form_container">
+			<h2>Create a new account</h2>
+            <form id="registration_form" method="POST" action="">
+				<input type="text" name="firstname" id="reg_form_fname" placeholder="Fistname" required/>
+				<input type="text" name="lastname" id="reg_form_lname" placeholder="Lastname" required/>
+                <input type="email" name="username" id="reg_form_uname" placeholder="Email" required/>
+                <input type="password" name="password1" id="reg_form_pwd1" placeholder="Password" required/>
+				<input type="password" name="password2" id="reg_form_pwd2" placeholder="Confirm Password" required/>
+                <input type="submit" name="account-creation-button" id="account-creation-button" value="Create account">
+            </form>
+			<div><span id="registration_feedback"></span></div>
         </div>
 
+		
 		<script src="assets/js/jquery-3.3.1.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
 		<script src="assets/js/popper.min.js"></script>
 		<script src="assets/js/owl.carousel.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 		<script src="assets/js/form-step.js"></script>
-		<script src="assets/js/jquery.validate.min.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script src="assets/js/authentication.js"></script>
 		<!-- <script src="assets/js/switch.js"></script> -->
 	</body>
 

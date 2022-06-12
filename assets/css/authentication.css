@@ -1,0 +1,28 @@
+.login_form_container{
+    width: 50%;
+    margin: auto;
+    padding: 20px 10px 10px 20px;
+}
+
+.login_form_container input[type="text"], .login_form_container input[type="password"], .login_form_container input[type="email"]{
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    padding: 10px;
+}
+
+.login_form_container input[type="submit"]{
+        color: #3c3c3c;
+        height: 65px;
+        width: 50%;
+        font-size: 18px;
+        font-weight: 700;
+        cursor: pointer;
+        text-align: center;
+        line-height: 65px;
+        border-radius: 3px;
+        background-color: #fff;
+        text-transform: uppercase;
+        transition: 0.3s all ease-in-out;
+}
