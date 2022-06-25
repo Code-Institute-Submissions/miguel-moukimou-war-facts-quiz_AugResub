@@ -108,15 +108,3 @@ $(document).ready(function () {
 
     });
 })
-
-function validateRegistrationForm() {
-    console.log("here");
-    /*$("#account-creation-button").click(function (e) {
-        e.preventDefault();
-        alert("submit");
-        
-    })
-    var isFormValid = true;*/
-
-
-}
