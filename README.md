@@ -1,4 +1,4 @@
-<h1 align="center">War facts</h1>
+<h1 align="center">War facts quiz</h1>
 
 [View the live project here.](https://miguel-moukimou.github.io/war-facts-quiz/)
 
