@@ -4,7 +4,7 @@
 
 The goal of this web site is to provide a challenging quiz to entertain online users.
 
-<h2 align="center"><img src="https://miguel-moukimou.github.io/war-facts-quiz/blob/main/assets/images/project-presntation-image.PNG"></h2>
+<h2 align="center"><img src="https://github.com/miguel-moukimou/war-facts-quiz/blob/main/assets/images/presentation-image.png"></h2>
 
 ## User Experience (UX)
 
@@ -158,7 +158,6 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 -   All content was written by the developer.
 
 ### Media
-
 
 ### Acknowledgements
 
