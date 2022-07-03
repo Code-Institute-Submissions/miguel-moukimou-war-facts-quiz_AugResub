@@ -15,8 +15,6 @@ body {
   font-family: "Jost", sans-serif;
   -moz-osx-font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
-  background-size: cover;
-  background-image: url(../img/qbg.jpg);
 }
 
 ::selection {

@@ -16,6 +16,7 @@
 	<body>
 		<div class="quiz-top-area text-center">
 			<h1>WAR FACTS QUIZ</h1>
+			<p id="username-holder" style="color: aliceblue; float: right; margin-right: 50px;">Hello Username</p>
 			
 		</div>
 		<div class="wrapper position-relative">
@@ -30,7 +31,7 @@
 					</ul>
 				</div>
 				<div class="step-inner-content clearfix position-relative">
-					<form class="multisteps-form__form" action="thank-you.html" id="wizard" method="POST">
+					<form class="multisteps-form__form" action="thank-you.html" id="wizard" method="GET">
 						<div class="form-area position-relative">
 							<div class="multisteps-form__panel  js-active" data-animation="fadeIn">
 								<div class="wizard-forms clearfix position-relative">
@@ -43,7 +44,7 @@
 										<ul>
 											<li>
 												<label class="start-quiz-item">
-													<input type="radio" name="ww1-start" value="1913-1916" class="exp-option-box">
+													<input type="radio" name="ww1start" value="1913-1916" class="exp-option-box">
 													<span class="exp-number text-uppercase">A</span>
 													<span class="exp-label">1913 - 1916</span>
 													<span class="checkmark-border"></span>
@@ -51,7 +52,7 @@
 											</li>
 											<li>
 												<label>
-													<input type="radio" name="ww1-start" value="1939-1945" class="exp-option-box">
+													<input type="radio" name="ww1start" value="1939-1945" class="exp-option-box">
 													<span class="exp-number text-uppercase">b</span>
 													<span class="exp-label">1939 - 1945</span>
 													<span class="checkmark-border"></span>
@@ -59,7 +60,7 @@
 											</li>
 											<li>
 												<label>
-													<input type="radio" name="ww1-start" value="1914-1918" class="exp-option-box">
+													<input type="radio" name="ww1start" value="1914-1918" class="exp-option-box">
 													<span class="exp-number text-uppercase">c</span>
 													<span class="exp-label">1914 - 1918</span>
 													<span class="checkmark-border"></span>
@@ -67,7 +68,7 @@
 											</li>
 											<li>
 												<label>
-													<input type="radio" name="ww1-start" value="1920-1924" class="exp-option-box">
+													<input type="radio" name="ww1start" value="1920-1924" class="exp-option-box">
 													<span class="exp-number text-uppercase">d</span>
 													<span class="exp-label">1920 - 1924 </span>
 													<span class="checkmark-border"></span>
@@ -75,9 +76,7 @@
 											</li>
 										</ul>
 									</div>
-									<div class="bottom-vector">
-										<img src="assets/img/bq1.png" alt="">
-									</div>
+									
 									<div class="quiz-progress-area">
 										<div class="progress">
 											<div class="progress-bar position-relative" style="width: 20%">
@@ -104,57 +103,55 @@
 										<ul>
 											<li>
 												<label class="start-quiz-item">
-													<input type="radio" name="quiz" value="Email Markering" class="exp-option-box">
-													<span class="exp-number text-uppercase"><img src="assets/img/qi1.png" alt=""></span>
+													<input type="radio" name="pandemic" value="englishflu" class="exp-option-box">
+													<span class="exp-number text-uppercase"></span>
 													<span class="exp-label">The English flu</span>
 													<span class="checkmark-border"></span>
 												</label>
 											</li>
 											<li>
 												<label>
-													<input type="radio" name="quiz" value="Font Developer" class="exp-option-box">
-													<span class="exp-number text-uppercase"><img src="assets/img/qi2.png" alt=""></span>
+													<input type="radio" name="pandemic" value="germanflu" class="exp-option-box">
+													<span class="exp-number text-uppercase"></span>
 													<span class="exp-label">The German flu</span>
 													<span class="checkmark-border"></span>
 												</label>
 											</li>
 											<li>
 												<label>
-													<input type="radio" name="quiz" value="Digital Marketing" class="exp-option-box">
-													<span class="exp-number text-uppercase"><img src="assets/img/qi3.png" alt=""></span>
+													<input type="radio" name="pandemic" value="spanishflu" class="exp-option-box">
+													<span class="exp-number text-uppercase"></span>
 													<span class="exp-label">The Spanish flu</span>
 													<span class="checkmark-border"></span>
 												</label>
 											</li>
 											<li>
 												<label>
-													<input type="radio" name="quiz" value="SEO" class="exp-option-box">
-													<span class="exp-number text-uppercase"><img src="assets/img/qi4.png" alt=""></span>
+													<input type="radio" name="pandemic" value="covid" class="exp-option-box">
+													<span class="exp-number text-uppercase"></span>
 													<span class="exp-label">The covid </span>
 													<span class="checkmark-border"></span>
 												</label>
 											</li>
 											<li>
 												<label>
-													<input type="radio" name="quiz" value="SEO" class="exp-option-box">
-													<span class="exp-number text-uppercase"><img src="assets/img/qi7.png" alt=""></span>
+													<input type="radio" name="pandemic" value="stervation" class="exp-option-box">
+													<span class="exp-number text-uppercase"></span>
 													<span class="exp-label">The starvation </span>
 													<span class="checkmark-border"></span>
 												</label>
 											</li>
 											<li>
 												<label>
-													<input type="radio" name="quiz" value="SEO" class="exp-option-box">
-													<span class="exp-number text-uppercase"><img src="assets/img/qi6.png" alt=""></span>
+													<input type="radio" name="pandemic" value="fever" class="exp-option-box">
+													<span class="exp-number text-uppercase"></span>
 													<span class="exp-label">The cold fever </span>
 													<span class="checkmark-border"></span>
 												</label>
 											</li>
 										</ul>
 									</div>
-									<div class="bottom-vector">
-										<img src="assets/img/bq1.png" alt="">
-									</div>
+									
 									<div class="quiz-progress-area">
 										<div class="progress">
 											<div class="progress-bar position-relative" style="width: 40%">
@@ -194,9 +191,7 @@
 											<span>Wooden buckets</span>
 										</label>
 									</div>
-									<div class="bottom-vector">
-										<img src="assets/img/bq1.png" alt="">
-									</div>
+									
 									<div class="quiz-progress-area">
 										<div class="progress">
 											<div class="progress-bar position-relative" style="width: 60%">
@@ -225,9 +220,7 @@
 											<div class="col-md-4">
 												<label class="quiz-option-area position-relative">
 													<input type="radio" name="indians" value="1000" class="exp-option-box">
-													<span class="quiz-option-img">
-														<img src="assets/img/qo1.png" alt="">
-													</span>
+													
 													<span class="quiz-option-serial text-center">1</span>
 													<span class="quiz-option-text">1000</span>
 												</label> 
@@ -235,9 +228,7 @@
 											<div class="col-md-4">
 												<label class="quiz-option-area position-relative">
 													<input type="radio" name="indians" value="10000" class="exp-option-box">
-													<span class="quiz-option-img">
-														<img src="assets/img/qo3.png" alt="">
-													</span>
+													
 													<span class="quiz-option-serial text-center">2</span>
 													<span class="quiz-option-text">10000</span>
 												</label> 
@@ -245,18 +236,14 @@
 											<div class="col-md-4">
 												<label class="quiz-option-area position-relative">
 													<input type="radio" name="indians" value="50000" class="exp-option-box">
-													<span class="quiz-option-img">
-														<img src="assets/img/qo2.png" alt="">
-													</span>
+													
 													<span class="quiz-option-serial text-center">3</span>
 													<span class="quiz-option-text">50000</span>
 												</label> 
 											</div>
 										</div>
 									</div>
-									<div class="bottom-vector">
-										<img src="assets/img/bq1.png" alt="">
-									</div>
+									
 									<div class="quiz-progress-area">
 										<div class="progress">
 											<div class="progress-bar position-relative" style="width: 80%">
@@ -286,7 +273,12 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 		<script src="assets/js/form-step.js"></script>
 		<script src="assets/js/jquery.validate.min.js"></script>
-		<script src="assets/js/main.js"></script>
+		<script>
+			var currentUser = JSON.parse(sessionStorage.getItem("currentUser"));
+			if(currentUser){
+				$("#username-holder").text("Hello "+currentUser.firstname+" "+currentUser.lastname);
+			}
+		</script>
 		<!-- <script src="assets/js/switch.js"></script> -->
 	</body>
 

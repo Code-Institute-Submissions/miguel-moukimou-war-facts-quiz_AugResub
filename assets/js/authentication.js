@@ -1,6 +1,5 @@
 $(document).ready(function () {
     var users = sessionStorage.getItem("users");
-    console.log(sessionStorage)
     $("#account_creation_link").click(function (e) {
         e.preventDefault();
         $("#login_container").hide();
@@ -20,8 +19,7 @@ $(document).ready(function () {
             $("#registration_feedback").hide();
 
             if (pwd1 != pwd2) {
-                console.log("pwd")
-                message = " The confirmation password is not correct."
+                message = " The confirmation password is not correct.";
                 $("#registration_feedback").html(message);
                 $("#registration_feedback").show();
             } else{
@@ -41,11 +39,10 @@ $(document).ready(function () {
                 } else{
                     var existingUser = users.find(u => u.username == username);
                     if(existingUser){
-                        var message = "There is already a user with the same username."
+                        message = "There is already a user with the same username.";
                         $("#registration_feedback").html(message);
                         $("#registration_feedback").show();
                     } else{
-                        console.log(users.length -1)
                         users[users.length] = {
                             firstname: firstname,
                             lastname: lastname,
@@ -60,7 +57,6 @@ $(document).ready(function () {
                 }
             }
             console.log(sessionStorage.getItem("users"));
-            console.log(sessionStorage)
         },
         invalidHandler: function(event, validator) {
             $("#registration_feedback").hide();
@@ -107,4 +103,4 @@ $(document).ready(function () {
         }
 
     });
-})
+});
