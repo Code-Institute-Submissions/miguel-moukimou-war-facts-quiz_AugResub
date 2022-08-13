@@ -27,6 +27,10 @@ body {
   background-color: #ed1b34;
 }
 
+#login_feedback, #registration_feedback{
+  color: red;
+}
+
 ul {
   margin: 0;
   padding: 0;

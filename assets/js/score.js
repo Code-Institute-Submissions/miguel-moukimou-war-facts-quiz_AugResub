@@ -15,8 +15,6 @@ $(document).ready(function () {
         vars[hash[0]] = hash[1];
     }
 
-    console.log(vars);
-
     if(questionAnswer.ww1start == vars["ww1start"]){
         score += 1;
     }

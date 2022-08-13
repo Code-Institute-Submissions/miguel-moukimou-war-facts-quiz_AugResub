@@ -52,11 +52,11 @@ $(document).ready(function () {
                     
                         sessionStorage.setItem("users", JSON.stringify(users));
                         $("#login_container").show();
+                        $("#login_feedback").html("");
                         $("#registration_form_container").hide();
                     }
                 }
             }
-            console.log(sessionStorage.getItem("users"));
         },
         invalidHandler: function(event, validator) {
             $("#registration_feedback").hide();
@@ -76,19 +76,24 @@ $(document).ready(function () {
     }).validate({
         submitHandler: function (form) {
             users = JSON.parse(sessionStorage.getItem("users"));
-            var pwd = $("#login_password").val();
-            var username = $("#login_username").val();
-            var existingUser = users.find(u => u.username == username && u.password == pwd);
-            if(existingUser){
-                sessionStorage.setItem("currentUser", JSON.stringify(existingUser));
-                $("#login_feedback").hide();
-                window.location.href = "quiz.html";
+            if(users != null && users != undefined){
+                var pwd = $("#login_password").val();
+                var username = $("#login_username").val();
+                var existingUser = users.find(u => u.username == username && u.password == pwd);
+                if(existingUser){
+                    sessionStorage.setItem("currentUser", JSON.stringify(existingUser));
+                    $("#login_feedback").hide();
+                    window.location.href = "quiz.html";
+                } else{
+                    var message = "Username or password incorrect";
+                    $("#login_feedback").html(message);
+                    $("#login_feedback").show();
+                }
             } else{
-                var message = "Username or password incorrect";
+                var message = "This user account does not exist. Please register first.";
                 $("#login_feedback").html(message);
                 $("#login_feedback").show();
             }
-
         },
         invalidHandler: function(event, validator) {
             $("#login_feedback").hide();
